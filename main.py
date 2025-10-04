@@ -94,7 +94,7 @@ def main():
 
 
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name("C:/Users/info/Desktop/Python/KEYS/gcp-b-409518-c59fbac920ba.json", scope)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name("", scope)
     client = gspread.authorize(credentials)
     sheet = client.open_by_key(GOOGLE_SHEET_KEY)
 
